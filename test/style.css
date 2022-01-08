@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 @import url('https://fonts.google.com/specimen/Poppins?category=Sans+Serif');
 @import url('https://fonts.google.com/specimen/Roboto?category=Sans+Serif');
-
 @media (min-width: 992px) {
-    .rounded-lg-3 { border-radius: .3rem; }
-  }
+    .rounded-lg-3 {
+        border-radius: .3rem;
+    }
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -12,16 +13,17 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-  }
-  main > .container {
+}
+
+main>.container {
     padding: 60px 15px 0;
-  }
+}
 
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -39,19 +41,60 @@ p {
 body {
     background-color: #FFFFFF;
 }
+
 .nav_bg {
     background-color: #EBEBF5;
 }
+
 .container1 {
     width: auto;
     max-width: 680px;
     padding: 0 15px;
-  }
+}
 
 .contact1 {
     background-color: #EBEBF5;
 }
+
 .b {
     color: #39387C;
     font-weight: 600;
+}
+
+.hero {
+    background-color: rgba(246, 246, 246, 0.5);
+}
+
+main>section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.service-card-content {
+    height: 380px;
+}
+
+.service-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.tool-img-container {
+    height: 150px;
+}
+
+.tool-img-container:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+}
+
+.tool-img {
+    width: auto;
+    height: 100%;
+}
+
+#discuss {
+    background-color: rgba(246, 246, 246, 0.5);
+}
+
+#contact h4 svg {
+    margin-right: 10px;
 }
