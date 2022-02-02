@@ -51,10 +51,14 @@ body {
 .nav_bg {
     background-color: #EBEBF5;
 }
+
+
 /* Solid border */
+
 hr.solid {
     border-top: 3px solid #000;
 }
+
 .container1 {
     width: auto;
     max-width: 680px;
@@ -80,7 +84,48 @@ main>section {
 }
 
 .service-card-content {
-    height: 380px;
+    height: 400px;
+}
+
+@media (max-width: 1399px) {
+    .service-card-content {
+        height: 450px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .service-card-content {
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-card-content {
+        height: 600px;
+    }
+    .contact-row {
+        flex-flow: column-reverse;
+    }
+    #about .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .img-fluid {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-card-content {
+        height: 400px;
+    }
+}
+
+@media (max-width: 345px) {
+    .service-card-content {
+        height: 450px;
+    }
 }
 
 .service-card:hover {
@@ -100,7 +145,8 @@ main>section {
     height: 100%;
 }
 
-#discuss {
+#discuss,
+#contact {
     background-color: rgba(246, 246, 246, 0.5);
 }
 
@@ -111,6 +157,7 @@ main>section {
 .action {
     background-color: #C9AF32;
 }
+
 .timeline:before {
     content: "";
     background: var(--bs-secondary);
@@ -119,16 +166,19 @@ main>section {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    }
-    .timeline-item:nth-child(even) .timeline-content {
+}
+
+.timeline-item:nth-child(even) .timeline-content {
     float: right;
     padding: 40px 30px 10px 30px;
-    }
-    .timeline-item:nth-child(even) .timeline-content .date {
+}
+
+.timeline-item:nth-child(even) .timeline-content .date {
     right: auto;
     left: 0;
-    }
-    .timeline-item:nth-child(even) .timeline-content::after {
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
     content: "";
     position: absolute;
     border-style: solid;
@@ -138,20 +188,23 @@ main>section {
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent var(--bs-light) transparent transparent;
-    }
-    .timeline-item::after {
+}
+
+.timeline-item::after {
     content: "";
     display: block;
     clear: both;
-    }
-    .timeline-content {
+}
+
+.timeline-content {
     position: relative;
     width: 45%;
     padding: 10px 30px;
     border-radius: 4px;
     background: var(--bs-light);
-    }
-    .timeline-content::after {
+}
+
+.timeline-content::after {
     content: "";
     position: absolute;
     border-style: solid;
@@ -161,8 +214,9 @@ main>section {
     right: -15px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent var(--bs-light);
-    }
-    .timeline-img {
+}
+
+.timeline-img {
     width: 30px;
     height: 30px;
     background: var(--bs-secondary);
@@ -171,31 +225,32 @@ main>section {
     left: 50%;
     margin-top: 25px;
     margin-left: -15px;
-    }
-    @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .timeline::before {
-    left: 50px;
+        left: 50px;
     }
     .timeline .timeline-img {
-    left: 50px;
+        left: 50px;
     }
     .timeline .timeline-content {
-    max-width: 100%;
-    width: auto;
-    margin-left: 70px;
+        max-width: 100%;
+        width: auto;
+        margin-left: 70px;
     }
     .timeline .timeline-item:nth-child(even) .timeline-content {
-    float: none;
+        float: none;
     }
     .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    left: -15px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
+        content: "";
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
     }
-    }
+}
