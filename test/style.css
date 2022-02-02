@@ -30,8 +30,13 @@ h1 {
 }
 
 h2 {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
 }
 
 p {
@@ -45,7 +50,10 @@ body {
 .nav_bg {
     background-color: #EBEBF5;
 }
-
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #000;
+}
 .container1 {
     width: auto;
     max-width: 680px;
@@ -97,4 +105,8 @@ main>section {
 
 #contact h4 svg {
     margin-right: 10px;
+}
+
+.action {
+    background-color: #C9AF32;
 }
